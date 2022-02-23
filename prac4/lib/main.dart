@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     theme: ThemeData.dark().copyWith(
       primaryColor: const Color(0xffF6265A),
       scaffoldBackgroundColor: const Color(0xff13131B),
@@ -26,6 +27,7 @@ class _AgeCalculatorState extends State<AgeCalculator> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Age Calculator"),
+        backgroundColor: Theme.of(context).primaryColor,
       ),
       body: Center(
         child: Column(
@@ -52,7 +54,10 @@ class _AgeCalculatorState extends State<AgeCalculator> {
             ),
             Text(
               year + " " + month + " " + day,
-              style: const TextStyle(fontSize: 20, color: Colors.black),
+              style: const TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+              ),
             ),
           ],
         ),
