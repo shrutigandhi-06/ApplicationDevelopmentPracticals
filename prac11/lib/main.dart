@@ -34,7 +34,7 @@ class _MapScreenState extends State<MapScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Choosing Current Location'),
+          title: const Text('Location'),
         ),
         backgroundColor: Colors.white,
         body: Center(
@@ -47,7 +47,7 @@ class _MapScreenState extends State<MapScreen> {
               color: Colors.blue,
             ),
             title: const Text(
-              'Use current location',
+              'Get Location',
               style: TextStyle(
                 color: Colors.blue,
               ),
